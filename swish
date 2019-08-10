@@ -1,0 +1,18 @@
+import java.util.*;
+class swish
+{
+	public static void main (String[] args) 
+	{
+	    Scanner sc=new Scanner(System.in);
+	    int price,dis,sum;
+	    price=sc.nextInt();
+	    dis=sc.nextInt();
+	    sum=price;
+	    while(price>1)
+	    {
+	        price=price-price*dis/100;
+	        sum=sum+price;
+	    }
+	    System.out.println(sum);
+	}
+}
